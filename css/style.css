@@ -1,0 +1,476 @@
+/* reseta o css */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --preto: #000000;
+    --azul: #04142f;
+    --gray: #ededed;
+    --dourado: #ffc600;
+}
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header{
+    width: 100%;
+    height: 500px;
+    background: var(--preto);
+}
+.conteudo{
+    max-width: 1000px;
+    min-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+nav{
+    width: 100%;
+    height: 125px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logomarca{
+    font-size: 24px;
+    color: var(--dourado);
+    cursor: pointer;
+}
+#logomarca{
+    height: 80px;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav ul li a{
+    color: var(--dourado);
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color:#dbdbdb;
+}
+
+nav ul button{
+    border: 1px solid var(--dourado);
+    background: transparent;
+    padding: 8px 40px;
+    cursor: pointer;
+    margin-left: 30px;
+    color: var(--dourado);
+    font-weight: bold;
+    border-radius: 4px;
+}
+nav ul button:hover{
+    transition: background, color 0.6s;
+    background: var(--dourado);
+    color: black;
+}
+
+.conteudo .header-bloco{
+    max-width: 1000px;
+    min-width: 300px;
+    height: 450px;
+    background: var(--azul);
+    border-radius: 8px;
+    box-shadow: 1px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 1px 0px 10px 0px rgba(0,0,0, 0.5);
+    -moz-box-shadow: 1px 0px 10px 0px rgba(0,0,0,0.5);
+    position: relative;
+    z-index: 10;
+    padding: 10px;
+}
+.header-bloco img{
+    width: 50%;
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+}
+
+.header-bloco .textos{
+    position: absolute;
+    bottom: 30%;
+    left: 15%;
+}
+.header-bloco .textos h2{
+    color: var(--dourado);
+    margin-bottom: 20px;
+    text-align: right;
+    transform: translate(-20px);
+    transition: transform 0.5s;
+}
+.header-bloco .textos p{
+    max-width: 280px;
+    color: #dbdbdb;
+    text-align: right;
+    transform: translateX(-20px);
+    transition: transform 0.4s;
+}
+/*Produtos do catálogo*/
+
+section .catalogo{
+    width: 100vw;
+    padding: 100px;
+}
+
+section .filtro-caixa{
+    width: 980px;
+    height: 150px;
+    background: #dbdbdb;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.entradaBuscas{
+    width: 700px;
+    height: 50px;
+    border: none;
+    border-radius: 4px 0px 0px 4px;
+    text-indent: 10px;
+}
+
+.btnBuscas{
+    width: 150px;
+    height: 50px;
+    border-radius: 0px 4px 4px 0px;
+    border: none;
+    background: var(--azul);
+    color: var(--dourado);
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: 0.2s ease;
+}
+
+.btnBuscas:hover{
+    background: #010a1a;
+    transform: scale(1.1);
+
+}
+.titulo-catalogo{
+    margin-top: 200px;
+    padding-bottom: 20px;
+}
+
+section .caixa-padrao{
+    max-width: 1000px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    grid-gap: 30px;
+    padding-top: 50px;
+}
+section .caixa-item{
+    height: 400px;
+    background: var(--gray);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.caixa-conteudo{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.caixa-item img{
+    width: 85%;
+}
+
+.caixa-item h4{
+    width: 90%;
+}
+
+.caixa-item p{
+    width: 90%;
+    font-style: italic;
+    color: #00000070;
+}
+.caixa-item button{
+    width: 90%;
+    padding: 15px 0px;
+    border: none;
+    background: var(--azul);
+    color: var(--dourado);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.caixa-item button:hover{
+    background: #010a1a;
+    transform: scale(1.1);
+}
+
+/*Seção sobre*/
+.sobre{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 10px;
+}
+
+.sobre-conteudo{
+    max-width: 1000px;
+    min-width: 300px;
+    height: 600px;
+    background: var(--preto);
+    margin: 0 auto;
+    border-radius: 8px;
+    z-index: 10;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.esquerda{
+    width: 25%;
+    min-width: 300px;
+    height: 100%;
+    background: var(--azul);
+    border-radius: 8px;
+}
+.direita{
+    width: 65%;
+    min-width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10%;
+}
+.direita h3{
+    text-align: right;
+    width: 90%;
+    margin-bottom: 20px;
+    color: var(--dourado);
+}
+
+.direita p{
+    max-width: 90%;
+    font-size: 1em;
+    letter-spacing: 2px;
+    text-align: right;
+    color: white;
+}
+
+/*Recursos*/
+.recursos{
+    width: 100%;
+    height: 100%;
+    background: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}
+
+.titulo-recursos{
+    padding: 20px 0px;
+}
+
+.recursos-blocos{
+    max-width: 1000px;
+    min-width: 300px;
+    height: 600px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 8px;
+    z-index: 10;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    grid-gap: 30px;
+}
+
+.recursos-item{
+    max-width: 420px;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #dedede3b;
+    border-radius: 4px;
+}
+.recursos-texto-conteudo{
+    max-width: 60%;
+    margin: 5px;
+}
+
+/*Animação rodando 360*/
+@keyframes rotate360 {
+    to { transform: rotate(360deg); }
+  }
+
+.recursos-item img{
+    width: 64px;
+    height: 64px;
+    animation: 3.5s rotate360 infinite linear; /*chamando a animação aqui*/
+}
+/*Footer*/
+footer .principal{
+    width: 100%;
+    height: 200px;
+    background: var(--preto);
+    padding: 20px 10px;
+}
+
+.links-footer{
+    max-width: 1000px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    margin: auto;
+}
+
+.footer-bloco1,
+.footer-bloco2,
+.redes-sociais,
+.social-icones,
+.contato{
+    color: var(--dourado);
+    height: 100%;
+    min-height: 100px;
+}
+
+
+.links-footer h4{
+    margin-bottom: 10px;
+}
+
+.links-footer h6:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.principal .redes-sociais img{
+    width: 32px;
+    height: 32px;
+}
+
+footer .creditos{
+    width: 100%;
+    height: 50px;
+    background: var(--azul);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .8rem;
+}
+
+footer img:hover{
+    transform: scale(1.1);
+}
+
+
+/*Trabalhando a responsividade*/
+@media(max-width: 576px){
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul button{
+        margin-left: 0;
+        padding: 8px 30px;
+    }
+    .header-bloco{
+        margin-top: 10px;
+    }
+
+
+    .header-bloco img{
+        width: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+    }
+    section .filtro-caixa{
+        width: 340px;
+        padding: 0px 10px;
+    }
+    .entradaBuscas{
+        max-width: 215px;
+        min-width: 120px;
+    }
+    .btnBuscas{
+        max-width: 50px;
+        min-width: 90px;
+    }
+    .sobre{
+        margin-top: 100px;
+    }
+    .titulo-sobre{
+        margin-bottom: 20px;
+    }
+    .sobre-conteudo{
+        flex-direction: column;
+        height: 100%;
+    }
+    .esquerda{
+        display: none;
+    }
+
+    .direita{
+        width: 90%;
+    }
+    .direita p{
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+    .recursos{
+        height: 100%;
+    }
+    .recursos-blocos{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    footer{
+        height: 100%;
+    }
+    footer .principal{
+        height: 100%;
+    }
+    .links-footer{
+        flex-direction: column;
+        padding: 10%;
+    }
+    
+
+
+}
